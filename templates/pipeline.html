@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="mb-4">Live DevOps Pipeline</h1>
+
+<div class="pipeline text-center">
+
+    <div class="step" id="step1">Code</div>
+    <div class="arrow">→</div>
+
+    <div class="step" id="step2">Build</div>
+    <div class="arrow">→</div>
+
+    <div class="step" id="step3">Test</div>
+    <div class="arrow">→</div>
+
+    <div class="step" id="step4">Docker</div>
+    <div class="arrow">→</div>
+
+    <div class="step" id="step5">Deploy</div>
+
+</div>
+
+<div class="text-center mt-4">
+    <button class="btn btn-primary" onclick="runPipeline()">▶ Run Pipeline</button>
+</div>
+
+<h3 class="mt-4 text-center" id="status">Status: Idle</h3>
+
+<script>
+function runPipeline() {
+    let steps = ["step1", "step2", "step3", "step4", "step5"];
+    let status = document.getElementById("status");
+
+    status.innerText = "Status: Running...";
+
+    steps.forEach((id, index) => {
+        setTimeout(() => {
+            document.getElementById(id).classList.add("active");
+            if(index === steps.length - 1){
+                status.innerText = "Status: Success ✅";
+            }
+        }, (index + 1) * 1000);
+    });
+}
+</script>
+
+{% endblock %}

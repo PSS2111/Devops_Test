@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<div class="hero text-center text-white p-5 rounded shadow">
+    <h1 class="display-4">DevOps Pipeline 🚀</h1>
+    <p class="lead">Automating Build, Test, and Deployment</p>
+</div>
+
+<!-- CARDS -->
+<div class="row mt-5 text-center">
+
+    <div class="col-md-4">
+        <div class="card shadow h-100 p-3">
+            <i class="fas fa-code fa-3x text-primary"></i>
+            <h4 class="mt-3">Code Integration</h4>
+            <p>Version control using GitHub ensures collaboration and tracking.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow h-100 p-3">
+            <i class="fas fa-cogs fa-3x text-success"></i>
+            <h4 class="mt-3">CI/CD Pipeline</h4>
+            <p>Automated testing and deployment using GitHub Actions.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow h-100 p-3">
+            <i class="fab fa-docker fa-3x text-info"></i>
+            <h4 class="mt-3">Docker</h4>
+            <p>Application containerized for consistency across environments.</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="mb-4">About This Project</h1>
+
+<p class="lead">
+This project demonstrates a complete DevOps lifecycle including version control,
+continuous integration, continuous delivery, and containerization.
+</p>
+
+<div class="row mt-4">
+
+    <div class="col-md-4">
+        <div class="card shadow p-3">
+            <h5>📂 Version Control</h5>
+            <p>Managed using GitHub repositories.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow p-3">
+            <h5>⚙️ Automation</h5>
+            <p>GitHub Actions automates build and test.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow p-3">
+            <h5>🚀 Deployment</h5>
+            <p>Auto deployment using CI/CD pipeline.</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

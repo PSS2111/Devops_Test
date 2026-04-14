@@ -1,0 +1,52 @@
+/* DARK MODE */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .card {
+    background: #1e1e1e;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(120deg, #007bff, #00d4ff);
+    animation: fadeIn 1s ease-in;
+}
+
+/* CARDS */
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* PIPELINE */
+.pipeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: gray;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.step.active {
+    background: #28a745;
+}
+
+.arrow {
+    font-size: 20px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
